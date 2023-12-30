@@ -2,3 +2,51 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --accent-color: #ff0070;
+  --decoration-color: #ff0070;
+  --title-color: #db00ff;
+  --title-shadow-color: #ff0070;
+  --title-decor-color: #000028;
+  --background-color: #000028;
+  --text-color: #f1b2ce;
+  --nav-color: #ff0070;
+  --section-header-color: #ff0070;
+  --header-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --header-paragraph-margin-bottom: 13px;
+  --decorated-zone-padding: 10px;
+  --content-padding: 10px;
+  --content-margin-top: 40px;
+  --content-gap: 50px;
+  --content-section-gap: 20px;
+  --image-wrapper-margin-top: 29px;
+  --image-wrapper-gap: 10px;
+  --image-list-gap: 5px;
+  --footer-margin-top: 35px;
+}
+
+@media screen and (width >= 768px) {
+  :root {
+    --header-paragraph-margin-bottom: 115px;
+    --header-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --decorated-zone-padding: 20px;
+    --content-padding: 20px;
+    --content-margin-top: 60px;
+    --content-gap: 80px;
+    --image-wrapper-margin-top: 60px;
+    --image-wrapper-gap: 20px;
+    --image-list-gap: 20px;
+    --footer-margin-top: 42px;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  :root {
+    --content-section-gap: 10px;
+    --header-paragraph-margin-bottom: 57px;
+    --content-section-gap: 20px 10px;
+    --image-list-gap: 25px;
+    --footer-margin-top: 38px;
+  }
+}
